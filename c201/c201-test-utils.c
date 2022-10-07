@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <inttypes.h>
 
 const int MaxListLength = 10;
 
@@ -39,6 +40,7 @@ void test_print_list(List *list)
 
 void test_print_first_element(List *list)
 {
+	
 	if (list->firstElement == NULL)
 	{
 		printf("%-15s: %s\n", "First element", "not initialised (list is empty)");
