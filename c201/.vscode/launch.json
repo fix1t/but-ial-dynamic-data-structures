@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/fix/Documents/IAL/HW1/c201",
-      "program": "/home/fix/Documents/IAL/HW1/c201/build/Debug/outDebug",
+      "cwd": "/home/fix/Documents/IAL/IAL1/c201",
+      "program": "/home/fix/Documents/IAL/IAL1/c201/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

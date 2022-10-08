@@ -386,6 +386,7 @@ TEST(test_delete_after, "Zrušení prvku po aktivním prvku")
 	DLL_Next(test_list);
 	DLL_DeleteAfter(test_list);
 	test_print_list(test_list);
+	
 ENDTEST
 
 TEST(test_dispose, "Zrušení prvků seznamu")
