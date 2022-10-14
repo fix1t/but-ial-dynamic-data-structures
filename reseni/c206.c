@@ -315,7 +315,6 @@ void DLL_DeleteAfter( DLList *list ) {
 		}
 	}
 	free(tmp);
-		
 }
 
 /**
