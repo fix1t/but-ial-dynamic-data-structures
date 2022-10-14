@@ -276,7 +276,7 @@ void List_Next( List *list ) {
  * @param list Ukazatel na inicializovanou strukturu jednosměrně vázaného seznamu
  */
 int List_IsActive( List *list ) {
-	return list->activeElement != NULL? 1:0;	
+	return list->activeElement != NULL;	
 }
 
 

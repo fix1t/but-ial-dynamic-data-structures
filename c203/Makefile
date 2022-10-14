@@ -6,7 +6,7 @@ CFLAGS=-std=c99 -Wall -Wextra -pedantic -lm -fcommon
 
 .PHONY: all run tests clean
 
-all: $(PROG)
+all: $(PROG) mydiff
 
 run: $(PROG)
 	@./$(PROG) > current-test.output
@@ -27,6 +27,10 @@ $(PROJECT)-advanced-test.output: $(PROJECT)-advanced-test
 	./$(PROJECT)-advanced-test > $(PROJECT)-advanced-test.output
 
 tests: $(TEST_OUTPUTS)
+
+mydiff:
+	 ./c20*-test > dif.output 
+	-./c20*-test | diff - c20*-test.output
 
 zadani: $(PROJECT)-test.output
 	@mkdir $@ 2>/dev/null || echo "Directory exists, continuing"

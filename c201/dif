@@ -1,0 +1,9 @@
+
+Test output differences:
+--- c201-test.output	2022-10-07 18:10:35.307051288 +0200
++++ current-test.output	2022-10-09 09:41:15.928355372 +0200
+@@ -154,3 +154,4 @@
+ List elements  : none (list is empty)
+ First element  : not initialised (list is empty)
+ Active element : not initialised (no item is active)
++

@@ -119,7 +119,7 @@ int nextIndex( int index ) {
  * @param queue Ukazatel na inicializovanou strukturu fronty
  */
 int Queue_IsEmpty( const Queue *queue ) {
-	return queue->freeIndex == 0? 1:0;
+	return queue->firstIndex == queue->freeIndex;
 }
 
 /**
@@ -130,7 +130,7 @@ int Queue_IsEmpty( const Queue *queue ) {
  * @param queue Ukazatel na inicializovanou strukturu fronty
  */
 int Queue_IsFull( const Queue *queue ) {
-	return nextIndex(queue->freeIndex) < (QUEUE_SIZE) ? 0:1;
+	return queue->freeIndex >= QUEUE_SIZE-1;
 }
 
 /**
